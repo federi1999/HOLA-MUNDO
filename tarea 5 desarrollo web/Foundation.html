@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer Formulario</title>
+    <style>
+        .myForm{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.8em;
+            width: 20em;
+            padding: 1em;
+            border: 1px solid #ccc;
+        }
+        .myForm *{
+            box-sizing: border-box;
+        }
+
+        .myForm fieldset{
+            border: none;
+            padding: 0;
+        }
+
+        .myForm legend,
+        .myForm label{
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .myForm label.choice{
+            font-size: 0.9em;
+            font-weight: normal;
+        }
+
+        .myForm input[type="text"],
+        .myForm input[type="tel"],
+        .myForm input[type="email"],
+        .myForm input[type="datetime-local"],
+        .myForm select,
+        .myForm textarea{
+            display: block;
+            width: 100%;
+            border: 1px solid #ccc;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 0.9em;
+            padding: 0.3em;
+        }
+
+        .myForm textarea{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form method="GET" ENCTYPE="application/x-www-form-urlencoded"
+    action="/noexiste.html"
+    class="myForm">
+    <p>
+        <label>Nombre
+        <input type="text" name="nombre_cliente" required>
+        </label>
+    </p>
+   
+    <p>
+        <label>Telefono
+        <input type="tel" name="numero_telefono" required>
+        </label>
+    </p>
+
+    <p>
+        <label>Email
+        <input type="email" name="direccion_correo" required>
+        </label>
+    </p>
+
+ <fieldset>
+     <legend>Que taxi quiere?</legend>
+     <p>
+         <label>
+             <input type="radio" name="taxi" required value="car">
+             Carrito
+         </label>
+     </p>
+
+     <p>
+         <label>
+             <input type="radio" name="taxi" required value="van">
+             Suv
+         </label>
+     </p>
+
+     <p>
+         <label>
+             <input type="radio" name="taxi" required value="tuktuk">
+             tuk tuk
+         </label>
+     </p>
+ </fieldset>
+
+ <fieldset>
+     <legend>Extras</legend>
+     <p>
+         <label>
+             <input type="checkbox" name="extras"  value="musica">
+             NO REGUETON
+         </label>
+     </p>
+
+     <p>
+        <label>
+            <input type="checkbox" name="extras"  value="sillaruedas">
+            silla de ruedas
+        </label>
+    </p>
+ </fieldset>
+
+ <p>
+     <label>Dia y hora?
+         <input type="datetime-local" name="fecha_hora" required>
+     </label>
+ </p>
+
+ <p>
+     <label>Lugar para recoger
+         <select name="pickup_place" id="pickup_place">
+             <option value="" selected="selected">Seleccione Opcion</option>
+             <option value="Oficina">Oficina</option>
+             <option value="Feria">La Feria</option>
+             <option value="La_U">La Universidad</option>
+             <option value="no_se">Le digo al cacho</option>
+         </select>
+     </label>
+ </p>
+
+ <p>
+     <label>Dejar en:
+         <input type="text" name="dejar_en" required list="destino">
+     </label>
+
+     <datalist id="destino">
+         <option value="Aereopuerto"></option>
+         <option value="Playa"></option>
+         <option value="La Biblioteca"></option>
+     </datalist>
+ </p>
+ <p>
+     <label>
+         Instrucciones Especiales
+         <textarea name="comentarios" maxlength="500"></textarea>
+     </label>
+ </p>
+ <p>
+     <button>Hacer Cita</button>
+ </p>
+    </form>
+</body>
+</html>
