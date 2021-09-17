@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Filtrando peliculas  por categorias</title>
+ llamaos a la carpeta css
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+	<script src="js/jquery-3.2.1.js"></script> llamamos a la libreria jquery
+	<script src="js/script.js"></script> llamamos a nuestro script
+</head>
+<body>
+	<nav class="navbar">
+		<img src="images/logo.png" class="logo" alt="" />
+		<div class="join-box">
+		  <p class="join-msg">unlimited tv shows & movies</p>
+		  <button class="btn join-btn">join now</button>
+		  <button class="btn">sign in</button>
+		</div>
+	  </nav>
+	<div class="wrap"> creamos un contenedor con la clase wrap donde estara todo el contenido
+		<h1>Selecciona tu Pelicula Favorita Jose Barrera </h1> titulo 
+		<div class="store-wrapper"> clase que contendra las opciones de categorias 
+			<div class="category_list">lista de categorias 
+				creamos los filtros
+				<a href="#" class="category_item" category="all">Todas las Categorias</a> creamos el id para filtrarlo y un atributo category
+				<a href="#" class="category_item" category="Familia">Niños</a>
+				<a href="#" class="category_item" category="Risas">Comedia</a>
+				<a href="#" class="category_item" category="Ciencia Ficcion">Terror</a>
+				<a href="#" class="category_item" category="Parejas">Amor</a>
+				<a href="#" class="category_item" category="Guerras">Accion</a>
+			</div>
+			<section class="products-list">
+				<div class="product-item" category="Familia"> creamos un contenedor 
+					<img src="images/niños.jpg" alt="" > seleccionamos el nombre la imagen de la pelicula para filtarlo
+					<a href="#">Batman y Robin</a>
+				</div>
+				<div class="product-item" category="Risas">cambiamos la categoria 
+					<img src="images/Madagascar-3.jpg" alt="" >
+					<a href="#">Madagascar-3</a>
+				</div>
+				<div class="product-item" category="Ciencia Ficcion">
+					<img src="images/fenomenos-paranormales.jpg" alt="" >
+					<a href="#">Paranormal</a>
+				</div>
+				<div class="product-item" category="Ciencia Ficcion">
+					<img src="images/terror-en-la-laguna-poster-1548705939.jpg" alt="" >
+					<a href="#">Terror en la Laguna</a>
+				</div>
+				<div class="product-item" category="Ciencia Ficcion">
+					<img src="images/terror 2.jpg" alt="" >
+					<a href="#">The Descent</a>
+				</div>
+				<div class="product-item" category="Familia">
+					<img src="images/Shrek_2_poster_AR (1).jpg" alt="" >
+					<a href="#">Shrek_2</a>
+				</div>
+				<div class="product-item" category="Parejas">
+					<img src="images/images.jpg" alt="" >
+					<a href="#">Notebook Love</a>
+				</div>
+				<div class="product-item" category="Guerras">
+					<img src="images/pantera.jpg" alt="" >
+					<a href="#">Pantera Negra</a>
+				</div>
+			</section>
+		</div>
+	</div>
+
+</body>
+</html>
