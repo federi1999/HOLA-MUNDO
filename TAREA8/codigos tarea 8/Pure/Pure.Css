@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+	    <link rel="stylesheet" href="style.css">
+	    <title>Document</title>
+	</head>
+	
+
+	<body>
+	    <div class="pure-form">
+	        <form class="myForm" method="GET" enctype="application/x-www-form-urlencoded" action="/noexiste.html">
+	            <div class="pure-form" id="dato">
+	                <p><label>Nombre <br><input type="text" name="nombre_cliente" required></label></p>
+	                <p><label>Telefono <br><input type="tel" name="numero_telefono" required></label></p>
+	                <p><label for="stacked-email">Email <br><input type="email" name="direccion_correo" required></label></p>
+	            </div>
+	            <div class="pure-form" id="dato">
+	                <fieldset>
+	                    <legend>Que taxi quiere</legend>
+	                    <label for="checkbox-radio-option-two" class="pure-radio"><input type="radio" name="taxi" required value="car"> Carrito</label>
+	                    <label for="checkbox-radio-option-two" class="pure-radio"><input type="radio" name="taxi" required value="car"> Suv</label>
+	                    <label for="checkbox-radio-option-two" class="pure-radio"><input type="radio" name="taxi" required value="car"> Tuk tuk</label>
+	                </fieldset>
+	            </div>
+	            <div class="pure-form" id="dato">
+	                <fieldset>
+	                    <legend>Extras</legend>
+	                    <label for="checkbox-radio-option-one" class="pure-checkbox"><input type="checkbox" name="extras" value="baby"> Silla de bebe</label>
+	                    <label for="checkbox-radio-option-one" class="pure-checkbox"><input type="checkbox" name="extras" value="musica"> No regueton</label>
+	                    <label for="checkbox-radio-option-one" class="pure-checkbox"><input type="checkbox" name="extras" value="sillaruedas"> Silla de ruedas</label>
+	                </fieldset>
+	            </div>
+	            <div class="pure-form" id="dato">
+	                <p><label>Dia y Hora</label><br><input type="datetime-local" name="fecha_hora" required></p>
+	                <p><label>Lugar para recojer <br> <select id="pickup_place" name="pickup_place"><option value="" selected="selected">Seleccione Opcion</option><option value="" selected="Oficina">Oficina</option><option value="" selected="Feria">La feria</option><option value="" selected="Universidad">La Universidad</option><option value="" selected="no_se">le digo al cacho</option></select></label></p>
+	                <p><label>Dejar en: <br> <input type="text" id="dejar_en" name="dejar_en" required list="destino"></label><datalist id="destino"><option value="Aereopuerto"></option><option value="Playa"></option><option value="La biblioteca"></option></datalist></p>
+	                <p><label>Instrucciones Especiales <br> <textarea id="comentarios" name="comentarios" maxlength="500"></textarea></label></p>
+	                <p><button class="pure-button">Hacer Cita</button></p>
+	            </div>
+	        </form>
+	    </div>
+	</body>
+	
+
+	</html>

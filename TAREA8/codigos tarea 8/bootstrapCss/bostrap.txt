@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!--bootsrap css-->
+	
+
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	    <link rel="stylesheet" href="style.css">
+	</head>
+	
+
+	<body id="lubri">
+	    <div>
+	        <div class="card">
+	            <div class="card-body">
+	                <form class="myForm" method="GET" enctype="application/x-www-form-urlencoded" action="/noexiste.html">
+	                    <legend>Datos Personales</legend>
+	                    <p class="card-title"><label class="card-subtitle mb-2-muted">Nombre <br> <input type="text" name="nombre_cliente" class="form-control" required></label></p>
+	                    <p class="card-title"><label class="card-subtitle mb-2-muted">Telefono <br><input type="tel" name="numero_telefono" class="form-control" required></label></p>
+	                    <p class="card-title"><label class="card-subtitle mb-2-muted">Email <br><input type="email" name="direccion_correo" class="form-control" required></label></p>
+	            </div>
+	        </div>
+	        <div class="card">
+	            <div class="card-body">
+	                <fieldset>
+	                    <legend>Que taxi quiere</legend>
+	                    <input class="form-check-input" type="radio" name="taxi" required value="car"> Carrito</label>
+	                    <br><input class="form-check-input" type="radio" name="taxi" required value="car"> Suv</label>
+	                    <br><input class="form-check-input" type="radio" name="taxi" required value="car"> Tuk tuk</label>
+	
+
+	                </fieldset>
+	            </div>
+	        </div>
+	        <div class="card">
+	            <div class="card-body">
+	                <fieldset>
+	                    <legend>Extras</legend>
+	                    <div class="form-check">
+	                        <input for="flexCheckDefault" class="form-check-input" type="checkbox" name="extras" value="baby"><label> Silla de bebe</label>
+	                        <input class="form-check-input" type="checkbox" name="extras" value="musica"><label> No regueton</label>
+	                        <input class="form-check-input" type="checkbox" name="extras" value="sillaruedas"><label> Silla de ruedas </label>
+	                        <input class="form-check-input" type="checkbox" name="extras" value="sillaruedas"><label> </label>
+	
+
+	                    </div>
+	                </fieldset>
+	            </div>
+	        </div>
+	        <div class="card">
+	            <div class="card-body">
+	                <p class="card-title"><label>Dia y Hora</label><input type="datetime-local" name="fecha_hora" class="form-control" required></p>
+	                <p class="card-title"><label>Lugar para recojer <select class="form-select" id="pickup_place"  name="pickup_place"><option value="" selected="selected">Seleccione Opcion</option><option value="" selected="Oficina">Oficina</option><option value="" selected="Feria">La feria</option><option value="" selected="Universidad">La Universidad</option><option value="" selected="no_se">le digo al cacho</option></select></label></p>
+	                <p class="card-title"><label>Dejar en : <input class="form-control"  type="text" name="dejar_en" required list="destino"></label><datalist id="destino"><option value="Aereopuerto"></option><option value="Playa"></option><option value="La biblioteca"></option></datalist></p>
+	                <p class="card-title"><label>Instrucciones Especiales <textarea class="form-control" name="comentarios" maxlength="500"></textarea></label></p>
+	                <p class="card-title" id="botonma"><button type="button" class="btn btn-outline-dark">Hacer Cita</button></p>
+	            </div>
+	        </div>
+	        </form>
+	    </div>
+	</body>
+	
+
+	</html>

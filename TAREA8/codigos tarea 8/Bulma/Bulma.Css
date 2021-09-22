@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	    <link rel="stylesheet" href="style.css">
+	    <title>Document</title>
+	</head>
+	
+
+	<body class="card" id="cajona">
+	
+
+	    <div class="card" id="cajas">
+	        <form class="myForm" method="GET" enctype="application/x-www-form-urlencoded" action="/noexiste.html">
+	            <div class="card">
+	                <div class="card-content" id="cajita">
+	                    <p><label>Nombre <br> <input class="input" type="text" name="nombre_cliente" required></label></p>
+	                    <p><label>Telefono <br><input  class="input" type="tel" name="numero_telefono" required></label></p>
+	                    <p><label>Email <br><input class="input" type="email" name="direccion_correo" required></label></p>
+	                    <fieldset>
+	                </div>
+	            </div>
+	            <div class="card">
+	                <div class="card-content" id="cajita">
+	                    <legend>Que taxi quiere</legend>
+	                    <br>
+	                    <label class="radio"><input type="radio" name="taxi" required value="car"> Carrito</label> <br>
+	                    <label class="radio"><input type="radio" name="taxi" required value="car"> Suv</label> <br>
+	                    <label class="radio"><input type="radio" name="taxi" required value="car"> Tuk tuk</label>
+	                    </fieldset>
+	                </div>
+	            </div>
+	            <div class="card">
+	                <div class="card-content" id="cajita">
+	                    <fieldset>
+	                        <legend>Extras</legend>
+	                        <br>
+	                        <label class="checkbox"><input type="checkbox" name="extras" value="baby"> Silla de bebe</label> <br>
+	                        <label class="checkbox"><input type="checkbox" name="extras" value="musica"> No regueton</label> <br>
+	                        <label class="checkbox"><input type="checkbox" name="extras" value="sillaruedas"> Silla de ruedas</label>
+	                    </fieldset>
+	                </div>
+	            </div>
+	            <div class="card">
+	                <div class="card-content" id="cajita">
+	                    <p><label>Dia y Hora <br></label><input class="input" type="datetime-local" name="fecha_hora" required></p>
+	                    <p><label>Lugar para recojer <br><div class="select"><select id="pickup_place" name="pickup_place"><option value="" selected="selected">Seleccione Opcion</option><option value="" selected="Oficina">Oficina</option><option value="" selected="Feria">La feria</option><option value="" selected="Universidad">La Universidad</option><option value="" selected="no_se">le digo al cacho</option></select></div></label></p>
+	                    <p><label>Dejar en : <br><input  class="input" type="text" name="dejar_en" required list="destino"></label><datalist id="destino"><option value="Aereopuerto"></option><option value="Playa"></option><option value="La biblioteca"></option></datalist></p>
+	                    <p><label>Instrucciones Especiales <br> <textarea class="textarea" name="comentarios" maxlength="500"></textarea></label></p>
+	                    <p><br><button class="button">Hacer Cita</button></p>
+	                </div>
+	            </div>
+	        </form>
+	    </div>
+	</body>
+	
+
+	</html>

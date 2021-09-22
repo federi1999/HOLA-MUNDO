@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+	
+
+	    <link rel="stylesheet" href="style.css">
+	    <title>Document</title>
+	</head>
+	
+
+	<body id="cajona">
+	    <form class="myForm" method="GET" enctype="application/x-www-form-urlencoded" action="/noexiste.html">
+	        <div class="card">
+	            <label>Nombre <input type="text" name="nombre_cliente" required></label>
+	            <label>telefono <input type="tel" name="numero_telefono" required></label>
+	            <label>Email <input type="email" name="direccion_correo" required></label>
+	        </div>
+	        <div class="card">
+	            <fieldset>
+	                <legend>Que taxi quiere</legend>
+	                <label><input id="caso" type="radio" name="taxi" required value="car">Carrito</label>
+	                <label><input id="caso" type="radio" name="taxi" required value="car">Suv</label>
+	                <label><input id="caso" type="radio" name="taxi" required value="car">Tuk tuk</label>
+	            </fieldset>
+	        </div>
+	        <div class="card">
+	            <fieldset>
+	                <legend>Extras</legend>
+	                <p><label for=""><input id="caso" type="checkbox" name="extras" value="baby">Silla de bebe</label></p>
+	                <p><label for=""><input id="caso" type="checkbox" name="extras" value="musica">No regueton</label></p>
+	                <p><label for=""><input id="caso" type="checkbox" name="extras" value="sillaruedas">Silla de ruedas</label></p>
+	            </fieldset>
+	        </div>
+	        <div class="card">
+	            <p><label>Dia y Hora</label><input type="datetime-local" name="fecha_hora" required></p>
+	            <p><label>Lugar para recojer <select id="pickup_place" name="pickup_place"><option value="" selected="selected">Seleccione Opcion</option><option value="" selected="Oficina">Oficina</option><option value="" selected="Feria">La feria</option><option value="" selected="Universidad">La Universidad</option><option value="" selected="no_se">le digo al cacho</option></select></label></p>
+	            <p><label>Dejar en : <input type="text" name="dejar_en" required list="destino"></label><datalist id="destino"><option value="Aereopuerto"></option><option value="Playa"></option><option value="La biblioteca"></option></datalist></p>
+	            <p><label>Instrucciones Especiales <textarea name="comentarios" maxlength="500"></textarea></label></p>
+	            <p><button class="button">Hacer Cita</button></p>
+	        </div>
+	    </form>
+	</body>
+	
+
+	</html>

@@ -1,0 +1,28 @@
+#lubri {
+	    background-color: #000000;
+	}
+	
+
+	.card {
+	    background-color: #48c4d4;
+	    width: 50rem;
+	    margin-top: 50px;
+	    margin-left: 50px;
+	}
+	
+
+	#botonma {
+	    color: #a1cece;
+	}
+	
+
+	.card-body textarea,
+	input,
+	select {
+	    width: 1000px;
+	}
+	
+
+	#pickup_place {
+	    width: 1000px;
+	}

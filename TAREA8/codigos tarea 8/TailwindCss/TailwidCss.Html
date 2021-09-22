@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	    <title>Document</title>
+	</head>
+	
+
+	<body class="bg-red-900 rounded">
+	
+
+	    <form class="myForm my-3 ml-2" method="GET" enctype="application/x-www-form-urlencoded" action="/noexiste.html">
+	        <div class="container bg-gray-200 pl-2 my-3 mt-1 border w-1/2 ml-2 rounded-2xl">
+	            <p class="m-1"><label class="font-serif">Nombre 
+	                <br><input type="text" name="nombre_cliente" required class="border-2 rounded "></label></p>
+	            <p class="m-1"><label class="font-serif">Telefono <br><input type="tel" name="numero_telefono" required class="border-2 rounded "></label></p>
+	            <p class="m-1"><label class="font-serif">Email <br><input type="email" name="direccion_correo" required class="border-2 rounded "></label></p>
+	        </div>
+	
+
+	        <div class="container bg-gray-200 pl-2 my-3 border-black w-1/2 ml-2 rounded-2xl">
+	            <fieldset>
+	                <legend>Que taxi quiere</legend>
+	                <p><label><input type="radio" name="taxi" required value="car"> Carrito</label></p>
+	                <p><label><input type="radio" name="taxi" required value="car"> Suv</label></p>
+	                <p><label><input type="radio" name="taxi" required value="car"> Tuk tuk</label></p>
+	            </fieldset>
+	        </div>
+	        <div class="container bg-gray-200 pl-2 my-3 border-black w-1/2 ml-2 rounded-2xl">
+	            <fieldset>
+	                <legend>Extras</legend>
+	                <p><label for=""><input type="checkbox" name="extras" value="baby"> Silla de bebe</label></p>
+	                <p><label for=""><input type="checkbox" name="extras" value="musica"> No regueton</label></p>
+	                <p><label for=""><input type="checkbox" name="extras" value="sillaruedas"> Silla de ruedas</label></p>
+	            </fieldset>
+	        </div>
+	        <div class="container bg-gray-200 pl-2 my-3 border-black w-1/2 ml-2 rounded-2xl">
+	            <p><label class="font-serif">Dia y Hora <br></label><input type="datetime-local" name="fecha_hora" required class="border-2 rounded "></p>
+	            <p><label class="font-serif">Lugar para recojer  <br><select id="pickup_place" name="pickup_place"><option value="" selected="selected" class="border-2 rounded">Seleccione Opcion</option><option value="" selected="Oficina">Oficina</option><option value="" selected="Feria">La feria</option><option value="" selected="Universidad">La Universidad</option><option value="" selected="no_se">le digo al cacho</option></select></label></p>
+	            <p><label class="font-serif">Dejar en : <br><input type="text" name="dejar_en" required list="destino"></label><datalist id="destino" class="border-2 rounded"><option value="Aereopuerto"></option><option value="Playa"></option><option value="La biblioteca"></option></datalist></p>
+	            <p><label class="font-serif">Instrucciones Especiales <br><textarea name="comentarios" maxlength="500" class="border-2 rounded"></textarea></label></p>
+	            <p><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2  ml-20 mb-1 rounded">Hacer Cita</button></p>
+	        </div>
+	    </form>
+	
+
+	</body>
+	
+
+	</html>
+
